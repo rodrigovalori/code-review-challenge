@@ -38,4 +38,5 @@ El código presentado no es lo más limpio y legible posible debido a la cantida
 ## 4 - Logging
 Es el proceso de imprimir o registrar las actividades en una aplicación que ayuda a los desarrolladores a comprender y analizar cuando hay errores inesperados en el sistema. Ademas los logs se pueden clasificar en función de su gravedad en forma de niveles de registro.
 
-Por lo tanto, no se está aplicando ninguna trazabilidad (logs)
+Por lo tanto, sería aconsejable agregar logs informativos de aviso de inicio y fin de procesos, como por ejemplo al inicio y fin de una requisicion. También sería muy útil tener logs de aviso de errores en caso de excepciones.
+
