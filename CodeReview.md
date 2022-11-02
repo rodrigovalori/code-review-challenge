@@ -66,6 +66,17 @@ if (ad.isComplete()) {
 
 El método 'calculateScore' tiene 72 líneas y además tiene múltiples cálculos que al final son muy confusos porque no están bien explicados. La mejor opción sería crear varios métodos a partir del anterior (por ejemplo **getScorePhotos** y **getScoreDescription**), cada uno con su función bien definida y al final sumar la puntuación total. Esto hace con que el código sea mucho más claro y fácil de entender que antes y siga (además de seguir las convenciones de código limpio).
 
+3 - 'AdsServiceImpl.java#calculateScore'
+```
+if (wds.contains("luminoso")) score += Constants.FIVE;
+    if (wds.contains("nuevo")) score += Constants.FIVE;
+    if (wds.contains("céntrico")) score += Constants.FIVE;
+    if (wds.contains("reformado")) score += Constants.FIVE;
+    if (wds.contains("ático")) score += Constants.FIVE;
+```
+La forma en la que se comprueba si la palabra forma parte de la descripción no es correcta, ya que existe la posibilidad del usuario escribir la misma palabra pero con alguna letra mayuscula o sin alguna tilde. Se debe implementar algun tipo de validacion que tenga en cuenta las condiciones mencionadas
+
+
 ## 8 - Constantes
 La clase 'Constants.java' no es nada descriptiva. por lo que los nombres de las constantes deberian hacer referencia a su significado y no al valor de su contenido.
 
