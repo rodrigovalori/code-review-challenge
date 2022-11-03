@@ -64,7 +64,7 @@ if (ad.isComplete()) {
 
 2 - 'AdsServiceImpl.java#calculateScore'
 
-El método 'calculateScore' tiene 72 líneas y además tiene múltiples cálculos que al final son muy confusos porque no están bien explicados. La mejor opción sería crear varios métodos a partir del anterior (por ejemplo **getScorePhotos** y **getScoreDescription**), cada uno con su función bien definida y al final sumar la puntuación total. Esto hace con que el código sea mucho más claro y fácil de entender que antes y siga (además de seguir las convenciones de código limpio).
+El método 'calculateScore' tiene 72 líneas y además tiene múltiples cálculos que al final son muy confusos porque no están bien explicados. La mejor opción sería crear varios métodos a partir del anterior (por ejemplo **getScorePhotos** y **getScoreDescription**), cada uno con su función bien definida y al final sumar la puntuación total. Esto hace con que el código sea mucho más claro y fácil de entender que antes (además de seguir las convenciones de código limpio).
 
 3 - 'AdsServiceImpl.java#calculateScore'
 ```
